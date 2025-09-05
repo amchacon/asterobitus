@@ -1,0 +1,32 @@
+{
+    "playerMoveSpeed": 4.0,
+    "playerRotationSpeed": 230.0,
+    "playerMaxHealth": 3,
+    "playerInvulnerabilityTime": 1.5,
+  
+    "standardShootCooldown": 0.5,
+    "standardProjectileSpeed": 10.0,
+    "standardProjectileLifetime": 1.5,
+    "standardProjectileDamage" : 2,
+
+    "doubleShootCooldown": 0.75,
+    "doubleProjectileSpeed": 10.0,
+    "doubleProjectileLifetime": 0.75,
+    "doubleProjectileDamage" : 1,
+  
+    "largeAsteroidSpeed": 2.0,
+    "largeAsteroidHealth": 3,
+    "largeAsteroidScore": 20,
+  
+    "mediumAsteroidSpeed": 3.0,
+    "mediumAsteroidHealth": 2,
+    "mediumAsteroidScore": 50,
+  
+    "smallAsteroidSpeed": 4.0,
+    "smallAsteroidHealth": 1,
+    "smallAsteroidScore": 100,
+  
+    "initialSpawnRate": 2.0,
+    "spawnRateIncrease": 0.1,
+    "maxAsteroidsOnScreen": 10
+}

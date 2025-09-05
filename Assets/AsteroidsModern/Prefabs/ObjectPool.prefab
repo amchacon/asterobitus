@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1853766126607357516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 879119395449767227}
+  - component: {fileID: 7398358088560976596}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &879119395449767227
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853766126607357516}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7398358088560976596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853766126607357516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39b5422e0ca54fa6a8b18b9c226e6c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  poolConfigs:
+  - poolName: StandardProjectile
+    prefab: {fileID: 2700373279061598849, guid: 60c25d1fd3485452fae8064f43f8ba83, type: 3}
+    initialSize: 15
+    maxSize: 30
+  - poolName: ExplosiveProjectile
+    prefab: {fileID: 2700373279061598849, guid: 249282974919b45ac919ee40cca734fa, type: 3}
+    initialSize: 10
+    maxSize: 20
+  - poolName: PiercingProjectile
+    prefab: {fileID: 2700373279061598849, guid: 60c25d1fd3485452fae8064f43f8ba83, type: 3}
+    initialSize: 0
+    maxSize: 0
+  - poolName: LargeAsteroid
+    prefab: {fileID: 9060210359323651951, guid: c96afa0a1b6b342dd8620a928cf71e12, type: 3}
+    initialSize: 15
+    maxSize: 50
+  - poolName: MediumAsteroid
+    prefab: {fileID: 9060210359323651951, guid: a6fcc97bba22a42a483f0ceb769b3c2a, type: 3}
+    initialSize: 15
+    maxSize: 50
+  - poolName: SmallAsteroid
+    prefab: {fileID: 9060210359323651951, guid: a9b9c05fc6ba245c1bf73ce3a0ad1029, type: 3}
+    initialSize: 15
+    maxSize: 50
+  poolParent: {fileID: 879119395449767227}

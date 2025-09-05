@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7751557527437646422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7455048966436453736}
+  - component: {fileID: 2374083692236366184}
+  - component: {fileID: 4580241339964796672}
+  - component: {fileID: 8193372698104747287}
+  - component: {fileID: 3127370824974804536}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7455048966436453736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751557527437646422}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2374083692236366184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751557527437646422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063a723c8c0fa457ca4b4c87fa7e0f5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+--- !u!114 &4580241339964796672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751557527437646422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfa679a79c24f4dfa8330808c91fc4a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSettings:
+    playerMoveSpeed: 5
+    playerRotationSpeed: 200
+    playerMaxHealth: 3
+    playerInvulnerabilityTime: 0
+    standardShootCooldown: 0
+    standardProjectileSpeed: 0
+    standardProjectileLifetime: 0
+    standardProjectileDamage: 0
+    doubleShootCooldown: 0
+    doubleProjectileSpeed: 0
+    doubleProjectileLifetime: 0
+    doubleProjectileDamage: 0
+    largeAsteroidSpeed: 2
+    largeAsteroidHealth: 3
+    largeAsteroidScore: 25
+    mediumAsteroidSpeed: 3
+    mediumAsteroidHealth: 2
+    mediumAsteroidScore: 50
+    smallAsteroidSpeed: 4
+    smallAsteroidHealth: 1
+    smallAsteroidScore: 100
+    initialSpawnRate: 2
+    spawnRateIncrease: 0.1
+    maxAsteroidsOnScreen: 10
+  configFileName: game_config.json
+--- !u!114 &8193372698104747287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751557527437646422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19530af0bc1094bd98dfb9e8ef7b8417, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects:
+  - effectName: asteroid_hit
+    effectPrefab: {fileID: 1640973782088318982, guid: 5c06eea9d1e4c4388a9723b42bd169ae, type: 3}
+    defaultDuration: 0.5
+    useObjectPool: 0
+  - effectName: large_asteroid_explosion
+    effectPrefab: {fileID: 2823131805472753439, guid: 857c6821a747d4a10988554087c032dd, type: 3}
+    defaultDuration: 0.5
+    useObjectPool: 0
+  - effectName: medium_asteroid_explosion
+    effectPrefab: {fileID: 2823131805472753439, guid: 857c6821a747d4a10988554087c032dd, type: 3}
+    defaultDuration: 0.5
+    useObjectPool: 0
+  - effectName: small_asteroid_explosion
+    effectPrefab: {fileID: 2823131805472753439, guid: 857c6821a747d4a10988554087c032dd, type: 3}
+    defaultDuration: 0.5
+    useObjectPool: 0
+  poolSize: 20
+--- !u!114 &3127370824974804536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751557527437646422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da422d959d62d4a938bea3059b3e65b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 0}
+  sfxSource: {fileID: 0}
+  audioClips:
+  - name: shoot
+    clip: {fileID: 8300000, guid: 3389885bcabc94f038e13225e159938e, type: 3}
+    volume: 0.7
+    pitch: 0
+    loop: 0
+  - name: asteroid_small_destroy
+    clip: {fileID: 8300000, guid: d7b4103a48a3542cb814131600dfc5fd, type: 3}
+    volume: 0.6
+    pitch: 0
+    loop: 0
+  - name: asteroid_medium_destroy
+    clip: {fileID: 8300000, guid: be37f7d204f554dda8f0ce369f323514, type: 3}
+    volume: 0.6
+    pitch: 0
+    loop: 0
+  - name: asteroid_large_destroy
+    clip: {fileID: 8300000, guid: c0e7c1fff71bd416baba537893dc55fa, type: 3}
+    volume: 0.6
+    pitch: 0
+    loop: 0
+  masterVolume: 1
+  musicVolume: 1
+  sfxVolume: 1
